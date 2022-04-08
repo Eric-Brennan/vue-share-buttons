@@ -7,7 +7,7 @@
   >
     <img v-if="customIcon" v-bind:src="customIcon" alt="" />
     <icon
-      iconName="Email"
+      :iconName="ariaLabel"
       class="share-button__icon"
       viewBoxWidth="620"
       viewBoxHeight="620"
@@ -34,6 +34,7 @@ export default {
     hasIcon: { type: Boolean, default: true },
     subject: { type: String, default: getDocumentTitle() },
     customIcon: { type: String, default: "" },
+    ariaLabel: { type: String, default: "Email" },
   },
   methods: {
     openShareWindow() {

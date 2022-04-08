@@ -99,6 +99,7 @@ Below are the options you can pass to create your own button.
 | digitsCounter | Number     | `0`                          | The number of decimal places in the counter                                                                                 |
 | keyCounter    | String     | `''`                         | Counter ID (note, it must be unique if you use several buttons with a counter for the same social network on the same page) |
 | customIcon    | String     | `''`                         | Custom imag                                                                                                                 |
+| ariaLabel     | String     | `Facebook`, `LinkedIn`, etc  | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                              |
 
 > Odnoklassniki
 
@@ -115,6 +116,7 @@ Below are the options you can pass to create your own button.
 | digitsCounter | Number     | `0`                      | The number of decimal places in the counter                                                                              |
 | customIcon    | String     | `''`                     | Custom image                                                                                                             |
 | sharePic      | String     | `''`                     | Link to image instead of favicon                                                                                         |
+| ariaLabel     | String     | `Odnoklassniki`, etc     | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           |
 
 > Tumblr
 
@@ -123,7 +125,7 @@ Below are the options you can pass to create your own button.
 | url           | String     | `document.location.href` | URL-address you want to share                                                                                               |
 | description   | String     | `document.title`         | Messages you want to share                                                                                                  |
 | title         | String     | `''`                     | Title you want to share                                                                                                     |
-| btnText       | String     | `Tumblr`, `Vkontakte`    | Text to be written on your button                                                                                           |
+| btnText       | String     | `Tumblr`                 | Text to be written on your button                                                                                           |
 | hasIcon       | Boolean    | `true`                   | Presence of social network icon in the button                                                                               |
 | isBlank       | Boolean    | `true`                   | Open the "share on social networks" frame in a new window                                                                   |
 | modalWidth    | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"     |
@@ -132,6 +134,7 @@ Below are the options you can pass to create your own button.
 | digitsCounter | Number     | `0`                      | The number of decimal places in the counter                                                                                 |
 | keyCounter    | String     | `''`                     | Counter ID (note, it must be unique if you use several buttons with a counter for the same social network on the same page) |
 | customIcon    | String     | `''`                     | Custom image                                                                                                                |
+| ariaLabel     | String     | `Tumblr`, etc            | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                              |
 
 > Vkontakte
 
@@ -140,7 +143,7 @@ Below are the options you can pass to create your own button.
 | url           | String     | `document.location.href` | URL-address you want to share                                                                                            |
 | description   | String     | `document.title`         | Messages you want to share                                                                                               |
 | title         | String     | `''`                     | Title you want to share                                                                                                  |
-| btnText       | String     | `Tumblr`, `Vkontakte`    | Text to be written on your button                                                                                        |
+| btnText       | String     | `Vkontakte`              | Text to be written on your button                                                                                        |
 | hasIcon       | Boolean    | `true`                   | Presence of social network icon in the button                                                                            |
 | isBlank       | Boolean    | `true`                   | Open the "share on social networks" frame in a new window                                                                |
 | modalWidth    | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"  |
@@ -149,6 +152,7 @@ Below are the options you can pass to create your own button.
 | digitsCounter | Number     | `0`                      | The number of decimal places in the counter                                                                              |
 | sharePic      | String     | `''`                     | Link to image instead of favicon                                                                                         |
 | customIcon    | String     | `''`                     | Custom image                                                                                                             |
+| ariaLabel     | String     | `Vkontakte`etc           | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           |
 
 > Pinterest
 
@@ -166,6 +170,7 @@ Below are the options you can pass to create your own button.
 | digitsCounter | Number     | `0`                      | The number of decimal places in the counter                                                                                 |
 | keyCounter    | String     | `''`                     | Counter ID (note, it must be unique if you use several buttons with a counter for the same social network on the same page) |
 | customIcon    | String     | `''`                     | Custom image                                                                                                                |
+| ariaLabel     | String     | `Pinterest`              | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                              | 
 
 ### Buttons without a counter
 
@@ -181,6 +186,7 @@ Below are the options you can pass to create your own button.
 | modalWidth  | Number     | `500`                                            | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"  |
 | modalHeight | Number     | `500`                                            | If the property "isBlank" is set to `false`, you can set the `height` of the modal window the "share on social networks" |
 | customIcon  | String     | `''`                                             | Custom image                                                                                                             |
+| ariaLabel   | String     | `Twitter`, `Hatena`, `Instapaper`, `LiveJournal` | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           | 
 
 > Digg, Xing, Pocket
 
@@ -193,6 +199,7 @@ Below are the options you can pass to create your own button.
 | modalWidth  | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"  |
 | modalHeight | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `height` of the modal window the "share on social networks" |
 | customIcon  | String     | `''`                     | Custom image                                                                                                             |
+| ariaLabel   | String     | `Digg`, `Xing`, `Pocket` | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           | 
 
 > Blogger
 
@@ -207,6 +214,7 @@ Below are the options you can pass to create your own button.
 | modalWidth  | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"  |
 | modalHeight | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `height` of the modal window the "share on social networks" |
 | customIcon  | String     | `''`                     | Custom image                                                                                                             |
+| ariaLabel   | String     | `Blogger`                | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           | 
 
 > Reddit, Renren
 
@@ -220,6 +228,7 @@ Below are the options you can pass to create your own button.
 | modalWidth  | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"  |
 | modalHeight | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `height` of the modal window the "share on social networks" |
 | customIcon  | String     | `''`                     | Custom image                                                                                                             |
+| ariaLabel   | String     | `Reddit`, `Renren`       | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           | 
 
 > Weibo
 
@@ -235,6 +244,7 @@ Below are the options you can pass to create your own button.
 | modalWidth  | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `width` of the modal window the "share on social networks"  |
 | modalHeight | Number     | `500`                    | If the property "isBlank" is set to `false`, you can set the `height` of the modal window the "share on social networks" |
 | customIcon  | String     | `''`                     | Custom image                                                                                                             |
+| ariaLabel   | String     | `Reddit`, `Renren`       | aria id for Icon (Improves Lighthouse score when using multiple share buttons)                                           |
 
 ### Buttons for instant messengers
 
@@ -244,9 +254,10 @@ Below are the options you can pass to create your own button.
 |------------|------------|--------------------------|-----------------------------------------------|
 | appID      | String     | `''`                     | A unique identifier for the application       |
 | url        | String     | `document.location.href` | URL-address you want to share                 |
-| btnText    | String     | `Facebook`               | Text to be written on your button             |
+| btnText    | String     | `Messenger`              | Text to be written on your button             |
 | hasIcon    | Boolean    | `true`                   | Presence of social network icon in the button |
 | customIcon | String     | `''`                     | Custom image                                  |
+| ariaLabel  | String     | `FacebookMessenger`      | aria id for Icon (Improves Lighthouse)        | 
 
 > Viber, WhatsApp
 
@@ -256,6 +267,7 @@ Below are the options you can pass to create your own button.
 | btnText    | String     | `Viber`, `WhatsApp`      | Text to be written on your button             |
 | hasIcon    | Boolean    | `true`                   | Presence of social network icon in the button |
 | customIcon | String     | `''`                     | Custom image                                  |
+| ariaLabel  | String     | `Viber`, `WhatsApp`      | aria id for Icon (Improves Lighthouse)        | 
 
 > Telegram
 
@@ -266,6 +278,7 @@ Below are the options you can pass to create your own button.
 | btnText     | String     | `Telegram`               | Text to be written on your button             |
 | hasIcon     | Boolean    | `true`                   | Presence of social network icon in the button |
 | customIcon  | String     | `''`                     | Custom image                                  |
+| ariaLabel   | String     | `Telegram`               | aria id for Icon (Improves Lighthouse)        | 
 
 ### Send a message via email
 
@@ -278,6 +291,7 @@ Below are the options you can pass to create your own button.
 | hasIcon    | Boolean    | `true`                   | Presence of social network icon in the button |
 | subject    | String     | `document.title`         | Email subject                                 |
 | customIcon | String     | `''`                     | Custom image                                  |
+| ariaLabel  | String     | `Email`                  | aria id for Icon (Improves Lighthouse)        | 
 
 ### Full list of social networks
 

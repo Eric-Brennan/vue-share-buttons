@@ -10,7 +10,7 @@
     <icon
       v-if="hasIcon === true"
       class="share-button__icon"
-      iconName="Telegram"
+      :iconName="ariaLabel"
     >
       <path
         d="M9.028 20.837c-.714 0-.593-.271-.839-.949l-2.103-6.92L22.263 3.37"
@@ -39,6 +39,7 @@ export default {
     btnText: { type: String, default: "Telegram" },
     hasIcon: { type: Boolean, default: true },
     customIcon: { type: String, default: "" },
+    ariaLabel: { type: String, default: "Telegram" },
   },
   methods: {
     openShareWindow() {

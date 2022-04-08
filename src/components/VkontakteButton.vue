@@ -10,7 +10,7 @@
   >
     <img v-if="customIcon" v-bind:src="customIcon" alt="" />
     <icon
-      iconName="Vkontakte"
+      :iconName="ariaLabel"
       class="share-button__icon"
       v-if="hasIcon === true"
     >
@@ -52,6 +52,7 @@ export default {
     digitsCounter: { type: Number, default: 0 },
     isBlank: { type: Boolean, default: true },
     customIcon: { type: String, default: "" },
+    ariaLabel: { type: String, default: "Vkontakte" },
   },
   mounted() {
     if (this.$props.hasCounter) this.getShareCounter();

@@ -9,7 +9,7 @@
     <icon
       v-if="hasIcon === true"
       class="share-button__icon"
-      iconName="FacebookMessenger"
+      :iconName="ariaLabel"
       view-box-height="512"
       view-box-width="512"
     >
@@ -39,6 +39,7 @@ export default {
     btnText: { type: String, default: "Messenger" },
     hasIcon: { type: Boolean, default: true },
     customIcon: { type: String, default: "" },
+    ariaLabel: { type: String, default: "FacebookMessenger" },
   },
   methods: {
     openShareWindow() {

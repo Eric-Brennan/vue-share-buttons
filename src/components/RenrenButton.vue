@@ -7,7 +7,9 @@
     @click="openShareWindow"
   >
     <img v-if="customIcon" v-bind:src="customIcon" alt="" />
-    <icon iconName="Renren" class="share-button__icon" v-if="hasIcon === true">
+    <icon :iconName="ariaLabel" 
+          class="share-button__icon" 
+          v-if="hasIcon === true">
       <path
         d="M5.661 9.601V5.303a6.793 6.793 0 0 0-4.053 11.084c2.378-1.152 4.041-3.755 4.053-6.786zM6.793 13.715c-.423 1.752-1.687 3.249-3.262 4.244a6.759 6.759 0 0 0 3.261.833 6.771 6.771 0 0 0 3.262-.833c-1.575-.995-2.838-2.493-3.261-4.244zM11.977 7.613a6.789 6.789 0 0 0-4.052-2.31v4.265c0 3.044 1.666 5.662 4.051 6.817a6.766 6.766 0 0 1-1.607-4.386 6.754 6.754 0 0 1 1.608-4.386z"
       />
@@ -35,6 +37,7 @@ export default {
     hasIcon: { type: Boolean, default: true },
     isBlank: { type: Boolean, default: true },
     customIcon: { type: String, default: "" },
+    ariaLabel: { type: String, default: "Renren" },
   },
   methods: {
     openShareWindow() {
